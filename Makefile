@@ -1,5 +1,3 @@
 repl:
-	docker run -it haskell:latest
+	docker run -v $(shell pwd):/work -w /work -it haskell
 
-compile:
-	docker run -v $(pwd):/app -w /app  -it haskell  ghc -o output main.hs
