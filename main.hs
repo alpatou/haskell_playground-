@@ -1,4 +1,14 @@
 module Print1 where 
 
+
+
+
 main::IO()
-main = putStrLn "Hello World!"
+main = do
+  putStrLn "Hello World!"
+  putStr "one , two"
+  putStr "three , and"
+  putStrLn "four!"
+
+
+
